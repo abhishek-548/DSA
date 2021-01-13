@@ -21,6 +21,14 @@ class Stack{
     public int peek(){
         return arr[top-1];
     }
+    /*gives size of the stack*/
+    public int size(){
+        return top;
+    }
+    /*checking wether stack is empty or not*/
+    public boolean isEmpty(){
+        return top<=0;
+    }
     /*displaying elements in stack*/
     public void show(){
         for(int i=arr.length-1;i>=0;i--){
@@ -40,6 +48,9 @@ public class Main
 		obj.push(50);
 		System.out.println("The pop value is : "+obj.pop());
 		System.out.println("The peek value is : "+obj.peek());
+		System.out.println("The size of the stack is : "+obj.size());
+		System.out.println(obj.isEmpty());
 		obj.show();
 	}
 }
+
